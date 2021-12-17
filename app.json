@@ -1,0 +1,54 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/mine/mine",
+    "pages/apply/apply",
+    "pages/curriculum/curriculum",
+    "pages/logs/logs",
+    "pages/news/news"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#4682B4",
+    "navigationBarTitleText": "指尖工大",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "statics/images/tabBar/home.png",
+        "selectedIconPath": "statics/images/tabBar/home_c.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/curriculum/curriculum",
+        "iconPath": "statics/images/tabBar/curriculum.png",
+        "selectedIconPath": "statics/images/tabBar/curriculum_c.png",
+        "text": "课表"
+      },
+      {
+        "pagePath": "pages/apply/apply",
+        "iconPath": "statics/images/tabBar/apply.png",
+        "selectedIconPath": "statics/images/tabBar/apply_c.png",
+        "text": "服务"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "statics/images/tabBar/mine.png",
+        "selectedIconPath": "statics/images/tabBar/mine_c.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-transition": "@vant/weapp/transition/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "cu-custom": "/colorui/components/cu-custom"
+  }
+}
