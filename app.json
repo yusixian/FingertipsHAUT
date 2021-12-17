@@ -44,11 +44,6 @@
   },
   "sitemapLocation": "sitemap.json",
   "usingComponents": {
-    "van-row": "@vant/weapp/row/index",
-    "van-col": "@vant/weapp/col/index",
-    "van-button": "@vant/weapp/button/index",
-    "van-transition": "@vant/weapp/transition/index",
-    "van-divider": "@vant/weapp/divider/index",
     "cu-custom": "/colorui/components/cu-custom"
   }
 }
