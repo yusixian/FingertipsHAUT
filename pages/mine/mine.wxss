@@ -1,0 +1,62 @@
+/* pages/mine/mine.wxss */
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: steelblue;
+  align-items: flex-start;
+  padding: 60rpx 45rpx;
+  margin-bottom: 30rpx;
+  height: 450rpx;
+}
+.main .title {
+  font-size: 76rpx;
+  font-weight: bold;
+  color: white;
+}
+.main .brief {
+  margin:15rpx 0;
+  font-size: 44rpx;
+  color: white;
+}
+.mainActive {
+  display: flex;
+  flex-direction: row;
+  background-color: steelblue;
+  align-items: flex-start;
+  padding: 0 50rpx;
+  height: 220rpx;
+}
+.info-card {
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background: rgba(189,206,229, 0.4); */
+  background-color:white;
+  box-shadow:  3px 3px 8px gray;
+  padding: 15rpx 0; /*内边距上下 左右*/
+  margin-top: 10rpx;
+  width: 100%;
+  gap: 20rpx;
+}
+.avatar {
+  width:100rpx;
+  height:100rpx;
+  border-radius: 50%;
+  overflow:hidden
+}
+
+.nickName {
+  font-size: 40rpx;
+  color: gray;
+}
+.mainActive .title {
+  font-size: 76rpx;
+  font-weight: bold;
+  color: white;
+}
+.mainActive .brief {
+  margin:15rpx 0;
+  font-size: 44rpx;
+  color: white;
+}

@@ -1,0 +1,71 @@
+<!-- pages/home/home.wxml -->
+<view class="bg-white"  style="height: 1500rpx; ">
+  <view class="logo">
+    <image src="/statics/images/logo/HAUTlogo.png" style="width:725rpx" mode="widthFix"></image> 
+    
+  </view>
+  
+  <view class="nav">
+    <view class="item">
+      <text class='icon-{{icon-name}} lg text-{{color}}'></text>
+      <image class="img" src="/statics/images/icons/school.png"></image>
+      <view class="title">学院简介</view>
+    </view>
+    <view class="item">
+      <image class="img" src="/statics/images/icons/calender.png"></image>
+      <view class="title">校历</view>
+    </view>
+    <view class="item">
+      <image class="img" src="/statics/images/icons/training.png"></image>
+      <view class="title">培养方案</view>
+    </view>
+    <view class="item" bindtap="NavToNews">
+      <image class="img" src="/statics/images/icons/more.png"></image>
+      <view class="title">更多</view>
+    </view>
+  </view>
+
+  <view class="main"  >
+    <!-- 内容板块 -->
+    <view class="news">
+      <!-- 导航栏 -->
+      <view class="kindnav">
+        <view class="item">
+          <view class="title {{newsTabCur == '0' ? 'active' : ''}}" catchtap="onClick" data-id="0">
+            通知公告
+          </view>
+        </view>
+        <view class="item">
+          <view class="title {{newsTabCur == '1' ? 'active' : ''}}" catchtap="onClick" data-id="1">
+            学院新闻
+          </view>
+        </view>
+        <view class="item">
+          <view class="title {{newsTabCur == '2' ? 'active' : ''}}" catchtap="onClick" data-id="2">
+            学生活动
+          </view>
+        </view>
+        <view class="item">
+          <view class="title {{newsTabCur == '3' ? 'active' : ''}}" catchtap="onClick" data-id="3">
+            学院简介
+          </view>
+        </view>
+      </view>
+      <!-- 各个卡片 -->
+      <!-- <view class="card">
+        <block wx:for="{{navlist}}" wx:for-index="idx">
+          <view class="card-title"  wx:if="{{idx == currentTabIndex}}">
+            {{item.text}}
+          </view>
+        </block>
+      </view> -->
+      <block wx:for="{{newslist}}" wx:for-index="idx">
+        <view class="card">
+          <view class="card-title">{{item.title}}</view>
+          <view class="card-brief">{{item.date}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+</view>
