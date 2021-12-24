@@ -13,12 +13,12 @@
 
 .card-title {
   color:gray;
-  font-size: 30rpx;
+  font-size: 38rpx;
   font-weight: bold;
 }
 
 .card-brief {
-  font-size: 25rpx;
+  font-size: 30rpx;
   margin-top: 9rpx;
   color:gray
 }
