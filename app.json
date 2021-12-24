@@ -5,8 +5,11 @@
     "pages/apply/apply",
     "pages/curriculum/curriculum",
     "pages/logs/logs",
-    "pages/display/news",
-    "pages/display/school"
+    "pages/display/news/news",
+    "pages/display/school/school",
+    "pages/display/calendar/calendar",
+    "pages/display/training/training",
+    "pages/display/more/more"
   ],
   "window":{
     "backgroundTextStyle":"light",

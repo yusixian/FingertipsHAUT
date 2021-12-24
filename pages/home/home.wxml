@@ -6,23 +6,25 @@
   </view>
   
   <view class="nav">
-    <navigator class="item" open-type="navigate" url="/pages/display/school" role = "navigation">
+    <navigator class="item" open-type="navigate" url="/pages/display/school/school" role = "navigation">
       <text class='icon-{{icon-name}} lg text-{{color}}'></text>
       <image class="img" src="/statics/images/icons/school.png"></image>
       <view class="title">学院简介</view>
     </navigator>
-    <navigator class="item" open-type="navigate" url="/pages/display/school" role = "navigation">
+    <navigator class="item" open-type="navigate" url="/pages/display/calendar/calendar" role = "navigation">
       <image class="img" src="/statics/images/icons/calender.png"></image>
       <view class="title">校历</view>
     </navigator>
-    <view class="item">
+
+    <navigator class="item" open-type="navigate" url="/pages/display/training/training" role = "navigation">
       <image class="img" src="/statics/images/icons/training.png"></image>
       <view class="title">培养方案</view>
-    </view>
-    <view class="item" bindtap="NavToNews">
+    </navigator>
+    
+    <navigator class="item" open-type="navigate" url="/pages/display/more/more" role = "navigation">
       <image class="img" src="/statics/images/icons/more.png"></image>
       <view class="title">更多</view>
-    </view>
+    </navigator>
   </view>
 
   <view class="main"  >

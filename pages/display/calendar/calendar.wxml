@@ -1,0 +1,25 @@
+<!--pages/display/calendar/calendar.wxml-->
+<scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
+  <view class="cu-item {{index==TabCur?'text-blue cur':''}}" wx:for="{{6}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+    {{imglist[index].text}}
+  </view>
+</scroll-view>
+<!-- <view class="bg-img" style="background-image: url({{imgURLList[TabCur].url}});height:600px;"></view> -->
+<view class="bg-gray box">
+  <image mode="widthFix" src="{{imgURLList[TabCur].url}}" style="height: 100%;"></image>
+</view>
+
+<view class="bg-gray text-center radius margin-top-sm">
+  <button class="cu-btn line-blue round lg shadow button-hover" bindtap="showModal" data-target="Image">
+    点击查看大图
+  </button>
+</view>
+<view class="cu-modal {{modalName=='Image'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="bg-img" style="background-image: url({{imgURLList[TabCur].url}});height:600px;"></view>
+
+    <view class="cu-bar bg-white">
+      <view class="action margin-0 flex-sub  solid-left" bindtap="hideModal">看到啦</view>
+    </view>
+  </view>
+</view>
