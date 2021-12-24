@@ -1,9 +1,12 @@
 import http from './http.js' //引入
 const app = getApp();
-/***********个人代办相关************/
-// 获取个人自己的待办
-// const getAllTodo = () => {
-//   return http({
-//     url:'/api/news/list-all'
-//   })
-// }
+/***********信息展示相关************/
+const getNewsListByID = (data) => {
+  return http({
+    url:'/api/news/list-by-type?newsType='+data
+  })
+}
+// 将方法导出，实现复用
+export default{
+  getNewsListByID
+}

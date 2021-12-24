@@ -31,18 +31,17 @@
     </view>
   </view>
   <view class="nav">
-    <view class="item">
-      <text class='icon-{{icon-name}} lg text-{{color}}'></text>
+    <navigator class="item" open-type="navigate" url="/pages/display/school/school" role = "navigation">
       <image class="img" src="/statics/images/icons/school.png"></image>
       <view class="title">学院简介</view>
-    </view>
-    <view class="item">
+    </navigator>
+    <navigator class="item" open-type="navigate" url="/pages/display/calendar/calendar" role = "navigation">
       <image class="img" src="/statics/images/icons/calender.png"></image>
       <view class="title">校历</view>
-    </view>
-    <view class="item">
+    </navigator>
+    <navigator class="item" open-type="navigate" url="/pages/display/training/training" role = "navigation">
       <image class="img" src="/statics/images/icons/training.png"></image>
       <view class="title">培养方案</view>
-    </view>
+    </navigator>
   </view>
 </view>>

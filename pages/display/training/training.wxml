@@ -1,2 +1,17 @@
 <!--pages/display/training/training.wxml-->
-<text>pages/display/training/training.wxml</text>
+<view class="cu-bar bg-gray margin flex justify-center">
+  <view class="text-center text-black text-sl text-bold text-shadow">培养方案</view>
+</view>
+
+<view class="main">
+  <!-- 各个卡片 -->
+  <block wx:for="{{tranlist}}" wx:for-index="idx">
+    <view class="card">
+      <view class="card-title">{{item.name}}</view>
+      <view class="card-brief">{{item.content}}</view>
+      <view class="margin text-center radius">
+        <button class="cu-btn line-black round lg shadow button-hover"><text class="cuIcon-down margin-right"></text>点击此处下载附件</button>
+      </view>
+    </view>
+  </block>
+</view>

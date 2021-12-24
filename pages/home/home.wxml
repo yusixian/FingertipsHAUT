@@ -7,7 +7,6 @@
   
   <view class="nav">
     <navigator class="item" open-type="navigate" url="/pages/display/school/school" role = "navigation">
-      <text class='icon-{{icon-name}} lg text-{{color}}'></text>
       <image class="img" src="/statics/images/icons/school.png"></image>
       <view class="title">学院简介</view>
     </navigator>

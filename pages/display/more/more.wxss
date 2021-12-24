@@ -1,1 +1,13 @@
 /* pages/display/more/more.wxss */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgba(189,206,229, 0.4); */
+  border-radius: 20px;
+  padding: 10rpx 48rpx;  /*内边距上下 左右*/
+  gap:20rpx;
+  margin-bottom: 140rpx;
+  /*margin: 5rpx 20rpx;  外边距上下 左*/
+}

@@ -1,2 +1,13 @@
 <!--pages/display/more/more.wxml-->
-<text>pages/display/more/more.wxml</text>
+<view class="cu-bar bg-gray margin flex justify-center">
+  <view class="text-center text-black text-sl text-bold text-shadow">研究生教学</view>
+</view>
+<view class="main">
+  <!-- 各个卡片 -->
+  <block wx:for="{{newslist}}" wx:for-index="idx">
+    <view class="card">
+      <view class="card-title">{{item.title}}</view>
+      <view class="card-brief">{{item.date}}</view>
+    </view>
+  </block>
+</view>

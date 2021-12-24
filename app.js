@@ -54,7 +54,7 @@ App({
                   })
                 }
               }
-              if (that.userLoginCallback) { //这个函数名字和你定义的一样即可
+              if (that.userLoginCallback()) { //这个函数名字和你定义的一样即可
                 that.userLoginCallback() //执行定义的回调函数
                 }
             },
@@ -147,6 +147,8 @@ App({
               console.log(res);
               if (res.data.success) {
                 app.globalData.sessionId = res.data.data.sessionId;
+                 // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
+                 // 所以此处加入 callback 以防止这种情况
                 if (app.userLoginCallback()) {
                   app.userLoginCallback();
                 }
