@@ -1,14 +1,15 @@
 - 2021/12/17 学习使用git,开始准备赶在12.26的ddl前搞定项目QAQ
 - 2021/12/24 摆烂吧，累了- -
 - 2021/12/25 要验收了写不完了写不完了写不完了一周三个课设太顶了！寒假一定！先这样吧
+- 2021/12/26 虽然丑，但他能跑了啊！（能跑就是胜利QAQ能验收了）
 
 某 摆烂的后端 链接：https://github.com/CHxCOOH/FingertipsHAUT_api
 # 指尖工大小程序
 - 首页、课表页面、服务页面、我的页面
 
 ![image](https://user-images.githubusercontent.com/43498495/147388495-5d978cfe-7ec8-42b0-b89f-e33ad58c7228.png)
-![image](https://user-images.githubusercontent.com/43498495/147388503-745e1925-d574-458f-9c12-a58ecee2b4c8.png)
-![image](https://user-images.githubusercontent.com/43498495/147388506-9f7537ba-84c5-4b36-b64b-7e94ba7a7237.png)
+![image](https://user-images.githubusercontent.com/43498495/147390587-013240d8-2e9b-4f57-89d9-99aa1357433a.png)
+![image](https://user-images.githubusercontent.com/43498495/147390594-42810306-8dfd-4c61-ac77-590d86ac7a9c.png)
 ![image](https://user-images.githubusercontent.com/43498495/147388511-2dacd931-17f3-4930-959f-394ad21f8775.png)
 ## 服务
 ### 信息科学与工程学院简介
