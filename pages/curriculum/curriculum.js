@@ -1,4 +1,6 @@
 // pages/curriculum/curriculum.js
+import api from '../../utils/api'
+const app = getApp();
 Page({
 
   /**
@@ -33,26 +35,33 @@ Page({
     // 课表数组
     wlist: [   
       // 周几     第几节开始   上几节     课程名称
-      { "xqj": 1, "skjc": 1, "skcd": 2, "kcmc": "高等数学@教A-301" },
-      { "xqj": 1, "skjc": 5, "skcd": 2, "kcmc": "毛概@教A-301" },
-      { "xqj": 2, "skjc": 1, "skcd": 2,"kcmc":"离散数学@教A-301"},
-      { "xqj": 2, "skjc": 8, "skcd": 2, "kcmc": "高等数学@教A-301" },
-      { "xqj": 3, "skjc": 4, "skcd": 1, "kcmc": "高等数学@教A-301" },
-      { "xqj": 3, "skjc": 8, "skcd": 1, "kcmc": "高等数学@教A-301" },
-      { "xqj": 3, "skjc": 5, "skcd": 2, "kcmc": "高等数学@教A-301" },
-      { "xqj": 4, "skjc": 2, "skcd": 4, "kcmc": "高等数学@教A-301" },
-      { "xqj": 4, "skjc": 8, "skcd": 2, "kcmc": "概率论@教A-301" },
-      { "xqj": 5, "skjc": 1, "skcd": 2, "kcmc": "高等数学@教A-301" },
-      { "xqj": 6, "skjc": 3, "skcd": 2, "kcmc": "高等数学@教A-301" },
-      { "xqj": 7, "skjc": 9, "skcd": 3, "kcmc": "高等数学@教A-301" }
+      // { "weekDay": 1, "startSession": 1, "duration": 2, "courseInfo": "高等数学@教A-301" },
+      // { "weekDay": 1, "startSession": 5, "duration": 2, "courseInfo": "毛概@教A-301" },
+      // { "weekDay": 2, "startSession": 1, "duration": 2,"courseInfo":"离散数学@教A-301"},
+      // { "weekDay": 2, "startSession": 8, "duration": 2, "courseInfo": "高等数学@教A-301" },
+      // { "weekDay": 3, "startSession": 4, "duration": 1, "courseInfo": "高等数学@教A-301" },
+      // { "weekDay": 3, "startSession": 8, "duration": 1, "courseInfo": "高等数学@教A-301" },
+      // { "weekDay": 3, "startSession": 5, "duration": 2, "courseInfo": "高等数学@教A-301" },
+      // { "weekDay": 4, "startSession": 2, "duration": 4, "courseInfo": "高等数学@教A-301" },
+      // { "weekDay": 4, "startSession": 8, "duration": 2, "courseInfo": "概率论@教A-301" },
+      // { "weekDay": 5, "startSession": 1, "duration": 2, "courseInfo": "高等数学@教A-301" },
+      // { "weekDay": 6, "startSession": 3, "duration": 2, "courseInfo": "高等数学@教A-301" },
+      // { "weekDay": 7, "startSession": 9, "duration": 3, "courseInfo": "高等数学@教A-301" }
     ]
   },
-
+  // 加载课表
+  getList: async function (e) {
+    let resData;
+    resData = await api.getCourseList();
+    console.log(resData.row);
+    this.setData({
+      wlist: resData.row
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
   },
 
   /**
@@ -71,6 +80,18 @@ Page({
         selected: 1 //解决自定义导航栏不灵敏
       })
    }
+    // 判断是否登录已成功
+    if (app.globalData.sessionId) {
+      // 加载所有课表
+
+    } else {
+      app.userLoginCallback = () => {
+        if (app.globalData.sessionId) {
+          // 加载所有课表
+        }
+      };
+    }
+    this.getList();
   },
 
   /**

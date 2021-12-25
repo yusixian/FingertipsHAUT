@@ -1,2 +1,12 @@
 <!--pages/news/news.wxml-->
-<text>pages/news/news.wxml</text>
+<view class="cu-bar bg-gray margin flex justify-center">
+  <view class="text-center text-black text-sl text-bold text-shadow">重修报名</view>
+</view>
+<view class="cu-timeline">
+  <view class="cu-time">21-11-25</view>
+  <view class="cu-item">
+    <view class="content text-lg">
+      <text>【通知】12月21日下午三点（明天）重修报名系统将关闭，再次提醒各位学生（尤其是毕业班学生）抓紧时间报名。报名后，一定要通过查看课程表确认是否报上。如有课程报不上，请及时联系教学办。课程设计类课程如果报不上的也一定要联系教学办！！</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+<!--pages/display/gpa/gpa.wxml-->
+<view class="main">
+  <view class="title">绩点计算</view>
+  <view class="brief">GPA Calculation</view>
+</view>

@@ -26,8 +26,8 @@
       </view>
       <!-- 课程信息 -->
       <view wx:for="{{wlist}}">
-        <view class="flex-item kcb-item" bindtap="showCardView" data-statu="open" data-index="{{index}}" style="margin-left:{{(item.xqj-1)*100}}rpx;margin-top:{{(item.skjc-1)*100+5}}rpx;height:{{item.skcd*100-5}}rpx;background-color:{{colorArrays[index%9]}}">
-          <view class="smalltext">{{item.kcmc}}</view>
+        <view class="flex-item kcb-item" bindtap="showCardView" data-statu="open" data-index="{{index}}" style="margin-left:{{(item.weekDay-1)*100}}rpx;margin-top:{{(item.startSession-1)*100+5}}rpx;height:{{item.duration*100-5}}rpx;background-color:{{colorArrays[index%9]}}">
+          <view class="smalltext">{{item.courseInfo}}</view>
         </view>
       </view>
 

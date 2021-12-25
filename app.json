@@ -9,7 +9,11 @@
     "pages/display/school/school",
     "pages/display/calendar/calendar",
     "pages/display/training/training",
-    "pages/display/more/more"
+    "pages/display/more/more",
+    "pages/display/personInfo/personInfo",
+    "pages/display/aboutUs/aboutUs",
+    "pages/display/setting/setting",
+    "pages/display/gpa/gpa"
   ],
   "window":{
     "backgroundTextStyle":"light",

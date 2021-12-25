@@ -1,0 +1,21 @@
+/* pages/display/gpa/gpa.wxss */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: steelblue;
+  align-items: flex-start;
+  padding: 60rpx 45rpx;
+  margin-bottom: 30rpx;
+  height: 250rpx;
+}
+.main .title {
+  font-size: 76rpx;
+  font-weight: bold;
+  color: white;
+}
+.main .brief {
+  margin:15rpx 0;
+  font-size: 44rpx;
+  color: white;
+}

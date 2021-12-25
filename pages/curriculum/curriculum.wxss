@@ -68,7 +68,7 @@
 }
 
 .smalltext {
-  font-size: 8pt;
+  font-size: 20rpx;
   color: #fff;
   padding-left: 2px;
 }

@@ -44,4 +44,16 @@
       <view class="title">培养方案</view>
     </navigator>
   </view>
+  <view class="cu-bar bg-white">  
+    <view class="action border-title">
+      <text class="text-xl text-black text-bold margin-left">教务相关</text>
+      <text class="bg-black margin-left" style="width:4rem"></text>
+    </view>
+  </view>
+  <view class="nav">
+    <navigator class="item" open-type="navigate" url="/pages/display/gpa/gpa" role = "navigation">
+      <image class="img" src="/statics/images/icons/gpa.png"></image>
+      <view class="title">绩点计算</view>
+    </navigator>
+  </view>
 </view>>

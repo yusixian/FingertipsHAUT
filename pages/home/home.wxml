@@ -61,10 +61,10 @@
         </block>
       </view> -->
       <block wx:for="{{newslist}}" wx:for-index="idx">
-        <view class="card">
+        <navigator class="card" open-type="navigate" url="/pages/display/news/news" role = "navigation">
           <view class="card-title">{{item.title}}</view>
           <view class="card-brief">{{item.date}}</view>
-        </view>
+        </navigator>
       </block>
     </view>
   </view>

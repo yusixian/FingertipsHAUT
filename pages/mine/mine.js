@@ -8,14 +8,50 @@ Page({
    */
   data: {
     userInfo: {},
-    stuId: "test",
     hasUserInfo: false,
     canIUseGetUserProfile: true,
-    auth: false      // 判断该用户是否认证绑定过
+    auth: false,      // 判断该用户是否认证绑定过
+
+    password: null,
+    studentId: null,
+    verifyCode: null,
+    formdata: {}
   },
-  // 事件处理函数
-  bindViewTap() {
-    
+  showModal(e) {
+    this.setData({
+      modalName: e.currentTarget.dataset.target
+    })
+  },
+  hideModal(e) {
+    this.setData({
+      modalName: null
+    })
+  },  // 实时获取input的数据值
+  diseaseStuIDInput: function(e) {
+    this.setData({
+      studentId: e.detail.value,
+    })
+  }, // 实时获取input的数据值
+  diseasePWInput: function(e) {
+    this.setData({
+      password: e.detail.value,
+    })
+  }, // 实时获取input的数据值
+  diseaseVCInput: function(e) {
+    this.setData({
+      verifyCode: e.detail.value,
+    })
+  },
+  commitbinding(e) {
+    var that = this;
+    var data = {
+      name: this.data.userInfo.name,
+      password: this.data.password,
+      studentId: this.data.studentId,
+      verifyCode: this.data.verifyCode
+    }
+    api.bindingJwglxt(data)
+    console.log(data)
   },
   async onShow() {
     //解决自定义导航栏不灵敏
